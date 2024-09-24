@@ -49,15 +49,18 @@ def run_rectangle():
 
 def run_tritop():
     print('TRITOP')
-    pass
+    for i in range(200, 400, 10): 
+        draw_boy(i, i) 
 
 def run_triright():
     print('TRIRIGHT')
-    pass
+    for i in range(400, 600, 10): 
+        draw_boy(i, 800 - i) 
 
 def run_trileft():
     print('TRILEFT')
-    pass
+    for i in range(600, 200, -10): 
+        draw_boy(i, 200) 
 
 def run_triangle():
     print('TRIANGLE')
