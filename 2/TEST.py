@@ -24,25 +24,21 @@ def run_top():
     print('TOP')
     for x in range(0, 800, 10):
         draw_boy(x, 600)
-    pass
 
 def run_right():
     print('RIGHT')
     for y in range(600, 0, -10):
         draw_boy(790,y)
-    pass
 
 def run_bottom():
     print('BOTTOM')
     for x in range(800, 0, -10):
         draw_boy(x, 0)
-    pass
 
 def run_left():
     print('LEFT')
     for y in range(0, 600, 10):
         draw_boy(0, y)
-    pass
 
 def run_rectangle():
     print('RECTANGLE')
@@ -50,13 +46,29 @@ def run_rectangle():
     run_right()
     run_bottom()
     run_left()
-    
+
+def run_tritop():
+    print('TRITOP')
     pass
-    
+
+def run_triright():
+    print('TRIRIGHT')
+    pass
+
+def run_trileft():
+    print('TRILEFT')
+    pass
+
+def run_triangle():
+    print('TRIANGLE')
+    run_tritop()
+    run_triright()
+    run_trileft()
 
 while True:
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
     break
     
 close_canvas()
