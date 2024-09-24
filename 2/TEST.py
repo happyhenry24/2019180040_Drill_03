@@ -18,7 +18,7 @@ def run_circle():
         theta = math.radians(degree)
         x = r * math.cos(theta) + cx
         y = r * math.sin(theta) + cy
-        draw_bow(x,y)
+        draw_boy(x,y)
 
 def run_top():
     print('TOP')
@@ -69,10 +69,7 @@ def run_triangle():
     run_trileft()
 
 while True:
-    #run_circle()
-    #run_rectangle()
+    run_circle()
+    run_rectangle()
     run_triangle()
-    break
-    
-close_canvas()
 
